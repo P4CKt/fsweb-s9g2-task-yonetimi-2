@@ -23,6 +23,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
       description: "",
       deadline: ""
     });
+    console.log(data)
   }
 
 

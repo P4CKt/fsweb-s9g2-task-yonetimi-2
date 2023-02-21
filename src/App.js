@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 
 
 function App() {
+
   const [tasks, setTasks] = useState(initialTasks);
   const [team, setTeam] = useState(initialTeam);
 
@@ -24,7 +25,7 @@ function App() {
     const ilgiliTask = tasksCopy.filter(t => t.id === id)[0];
     ilgiliTask.status = "yapıldı";
     setTasks(tasksCopy);
-
+   
     toast.success(`Tebrikler! "${ilgiliTask.title}" tamamlandı!`);
   }
 
